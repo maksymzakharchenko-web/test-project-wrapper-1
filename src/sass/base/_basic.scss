@@ -1,0 +1,33 @@
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  @media (max-width: 1100px) {
+    font-size: 30px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #576671;
+  font-size: 60px;
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}

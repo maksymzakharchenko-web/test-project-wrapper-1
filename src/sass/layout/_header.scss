@@ -1,0 +1,39 @@
+.nav-bar-decoration {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  @media (max-width: 768px) {
+    margin: 0 auto 20px;
+  }
+}
+
+.main-menu-decoration {
+  list-style: none;
+  border: 1px solid $our-advantage-text-color;
+  border-radius: 10px;
+  background: $secondary-bg-color;
+  @media (max-width: 722px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 576px) {
+    display: none;
+  }
+  li {
+    color: black;
+    padding: 0 5px;
+  }
+  a {
+    color: $our-advantage-text-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  i {
+    color: #ffffff;
+    font-size: 14px;
+  }
+}

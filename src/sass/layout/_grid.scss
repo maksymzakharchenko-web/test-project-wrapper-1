@@ -1,0 +1,181 @@
+.top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/top-wrapper-bg.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+  p {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    @media (max-width: 1100px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.about-us {
+  .about-us-info {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  p {
+    font-size: 18px;
+    color: $our-advantage-text-color;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  button {
+    background-color: $btn-bg;
+    color: #ffffff;
+    &:hover {
+      background: none;
+      color: $btn-text-color;
+      border: 2px solid $btn-bg;
+    }
+  }
+}
+
+.activity-img {
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.activity-info {
+  button {
+    background-color: $btn-bg;
+    color: #ffffff;
+    &:hover {
+      background: none;
+      color: $btn-text-color;
+      border: 2px solid $btn-bg;
+    }
+  }
+}
+
+.blog {
+  background: $secondary-bg-color;
+  button {
+    display: block;
+    margin: 0 auto;
+    background-color: $btn-bg;
+    color: #ffffff;
+    @media (max-width: 800px) {
+      margin: 0 auto;
+    }
+    &:hover {
+      background: none;
+      color: $btn-text-color;
+      border: 2px solid $btn-bg;
+    }
+  }
+}
+
+.blog-post-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: $btn-text-color;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
+    @media (max-width: 992px) {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  p {
+    color: $our-advantage-text-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: justify;
+    @media (max-width: 992px) {
+      display: block;
+      font-size: 16px;
+      margin: 10px auto;
+      text-align: justify;
+      padding: 10px;
+    }
+  }
+}
+
+.blog-img {
+  min-width: 50%;
+  height: auto;
+  background: url("../img/siyanie.jpg") no-repeat center;
+  background-size: contain;
+  margin-right: 30px;
+  @media (max-width: 800px) {
+    width: 100%;
+    min-height: 40vh;
+    margin-bottom: 30px;
+  }
+}
+
+.map {
+  img {
+    width: 100%;
+    height: auto;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    background-color: $btn-bg;
+    color: #ffffff;
+    &:hover {
+      background: none;
+      color: $btn-text-color;
+      border: 2px solid $btn-bg;
+    }
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.contacts {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 30px;
+  li {
+    padding: 25px 0;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.icon {
+  padding: 20px;
+  cursor: pointer;
+  transition: 1s;
+  @media (max-width: 500px) {
+    display: block;
+    margin: 0 auto;
+  }
+  &:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}
